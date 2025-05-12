@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Каталог</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<table id="productTable">
+  <thead>
+    <tr>
+      <th onclick="sortTable(0)">Title</th>
+      <th onclick="sortTable(1)">Price $</th>
+      <th onclick="sortTable(2)">Stock</th>
+    </tr>
+  </thead>
+  <tbody id="tableBody">
+  </tbody>
+</table>
+<h3>Create new product</h3>
+<input id="titleInput" placeholder="Title">
+<input id="priceInput" type="number" placeholder="Price">
+<input id="stockInput" type="number" placeholder="Stock availability">
+<button onclick="createProduct()">Create product</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
